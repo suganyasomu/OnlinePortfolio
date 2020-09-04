@@ -1,174 +1,231 @@
 body {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG); */
-    /*  background-size: cover;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG); */
+  /*  background-size: cover;
     background-position: center; */
-    /* height: 100vh; */
-    /* background-attachment: fixed; */
-    /* overflow-x: hidden; */
+  /* height: 100vh; */
+  /* background-attachment: fixed; */
+  /* overflow-x: hidden; */
 
-    /* min-zoom: 10; */
-    /* min-zoom: 10px; */
-    /* max-width: 100%;
+  /* min-zoom: 10; */
+  /* min-zoom: 10px; */
+  /* max-width: 100%;
     height: auto; */
 }
 
-#backImg {
-    background: url(Assets/pro_img.JPG) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
+.parallax {
+  background: url(Assets/pro_img.JPG) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG);
     height: 100vh;
     width: 100%; */
-    /*height to 100% of view height*/
-    /* background: #31b0d5; */
-    /*background color to blue*/
-    margin-bottom: 0;
-    /*no bottom margin*/
-    /* background-repeat: no-repeat; */
+  /*height to 100% of view height*/
+  /* background: #31b0d5; */
+  /*background color to blue*/
+  margin-bottom: 0;
+  /*no bottom margin*/
+  /* background-repeat: no-repeat; */
 
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
 }
 
 .navbar-nav {
-    margin-left: auto;
-    margin-right: 70px;
+  margin-left: auto;
+  margin-right: 70px;
 }
 
 .intro {
-    text-align: center;
-    -webkit-animation: mymove 5s;
-    -webkit-animation-fill-mode: forwards;
-    position: absolute;
+  text-align: center;
+
+  /* -webkit-animation: mymove 5s;
+  -webkit-animation-fill-mode: forwards; */
+  position: absolute;
 }
 
-@-webkit-keyframes mymove {
-    from {
-        top: 0px;
-    }
+/* @-webkit-keyframes mymove {
+  from {
+    top: 0px;
+  }
 
-    to {
-        top: 15%;
-    }
-}
+  to {
+    top: 15%;
+  }
+} */
+
+/* .animate__backOutUp{
+
+} */
+/* 
+@-webkit-keyframes animate__backOutUp {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 15%;
+  }
+} */
 
 .intro h1 {
-    font-size: 300%;
-    padding-top: 60px;
-    font-family: Arial;
-    font-weight: bold;
-    color: white;
-    /* animation: mymove infinite; */
+  font-size: 300%;
+  padding-top: 60px;
+  font-family: Arial;
+  font-weight: bold;
+  color: white;
+  /* animation: mymove infinite; */
 
-    /* -webkit-animation-duration: 3s;
+  /* -webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
     -webkit-animation-iteration-count: 1; */
 }
 
-.hero {}
-
 .intro h2 {
-    font-family: "Lobster";
-    color: white;
-    margin-bottom: 20px;
-    /* -webkit-animation-duration: 3s;
+  font-family: "Lobster";
+  color: white;
+  margin-bottom: 20px;
+  /* -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: 1; */
 }
 
 #touch {
-    text-decoration: none;
-    margin-left: 10px;
-    padding: 10px 20px;
-    border: 1px solid white;
-    color: white;
-    font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+}
+
+#about-me {
+  background-color: #808cac;
+  color: white;
+}
+
+.portfolio {
+  background-color: #f2f5fa;
+}
+
+#contactSection {
+  background-color: #c3c3c3;
 }
 
 #about,
-#portfolio,
+#portfolioSection,
 #contact {
-    text-align: center;
-    padding: 20px 30px;
+  text-align: center;
+  padding: 20px 30px;
 }
 
 /*  */
 
 #weather,
 #jobSearch {
-    height: 30vh;
-    width: 100%;
+  height: 30vh;
+  width: 100%;
+}
+.img-thumbnail {
+  height: 200px;
+  width: 60%;
+  margin-left: 70px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
 }
 
-.caption-text {
-    visibility: hidden;
+/* Animation */
+.animate__animated.animate__backInLeft {
+  --animate-duration: 5s;
 }
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 5s;
+}
+
+.animate__animated.animate__backInUp {
+  --animate-duration: 3s;
+}
+
+/* .caption-text {
+  visibility: hidden;
+} */
 
 img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-img:hover div {
-    width: 150px;
-    padding: 8px 15px;
-    visibility: visible;
-    opacity: 0.7;
-}
+/* img:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+} */
 
 #contactSection {
-    margin-top: 20px;
-    margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 
-    border: 1px solid darkgray;
-    border-radius: 10px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
 }
 
 /* Parent Container */
 .imageContainer {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 10px;
+  position: relative;
+  /* width: 100px; */
+  /* height: 200px; */
+  float: centre;
+  /* margin-right: 100px; */
 }
 
 /* Child Text Container */
-.imageContainer p {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: black;
-    color: white;
-    margin-bottom: 5px;
-    font-family: sans-serif;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: visibility 0s, opacity 0.5s linear;
-    transition: visibility 0s, opacity 0.5s linear;
+.imageContainer div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  float: centre;
+}
+
+.caption {
+  text-align: center;
 }
 
 /* Hover on Parent Container */
 .imageContainer:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.imageContainer:hover p {
-    width: 150px;
-    padding: 8px 15px;
-    visibility: visible;
-    opacity: 0.7;
+.imageContainer:hover div {
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
-    bottom: 0px !important;
-    background-color: burlywood;
-    text-align: center;
-    margin-top: 0px;
-    padding: 10px;
+  bottom: 0px !important;
+  background-color: burlywood;
+  text-align: center;
+  margin-top: 0px;
+  padding: 10px;
 }

@@ -10,6 +10,11 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -36,13 +41,13 @@
           >
 
           <a class="nav-item nav-link" href="#about">About</a>
-          <a class="nav-item nav-link" href="#">Portfolio</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+          <a class="nav-item nav-link" href="#portfolioSection">Portfolio</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
-    <div class="container-fluid" id="backImg">
-      <div class="intro">
+    <div class="parallax" id="backImg">
+      <div class="intro animate__animated animate__backInDown">
         <h1>Suganya Somu</h1>
         <h2>Full stack Web Developer in Oregon</h2>
         <a class="button" href="#contact" id="touch">GET IN TOUCH</a>
@@ -56,9 +61,9 @@
         <h1 id="about">ABOUT</h1>
         <div class="row">
           <div class="col-md-4">
-            <div class="about-box">
+            <div class="about-box animate__animated animate__backInLeft">
               <!-- <a class="anchor" name="about"></a> -->
-              <h3>Hi my name is Suganya Somu</h3>
+              <h3>HI MY NAME IS SUGANYA SOMU</h3>
               <hr />
               <p>
                 I'm a Full stack Web Developer living in oregon, I enjoy to
@@ -68,9 +73,15 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4"></div>
           <div class="col-md-4">
-            <div class="about-box js--wp-3">
+            <img
+              src="Assets/Suganya_Somu.jpg"
+              class="img-thumbnail animate__animated animate__backInUp"
+              alt="Suganya's Thumbnail image"
+            />
+          </div>
+          <div class="col-md-4">
+            <div class="about-box animate__animated animate__backInRight">
               <h3>Skills</h3>
               <hr />
               <div class="row">
@@ -149,7 +160,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 animate__animated animate__backInLeft">
             <!-- <div class="about-box"> -->
             <div class="lighter"><h3>Experience</h3></div>
             <hr />
@@ -167,7 +178,7 @@
     </section>
     <section class="portfolio">
       <div class="container">
-        <h1 id="portfolio">PORTFOLIO</h1>
+        <h1 id="portfolioSection">PORTFOLIO</h1>
         <div class="row">
           <div class="col-md-4 imageContainer">
             <img
@@ -175,10 +186,17 @@
               src="https://media.wired.com/photos/5dfc548ea03b9b0008afa1a5/master/pass/Science_forecasting-1152325323.jpg"
               alt="weather"
             />
-            <p>Image1</p>
+            <div class="caption">
+              <div class="blur"></div>
+              <div class="caption-text">
+                <h1>google maps Api project</h1>
+                <p>Knockout.js, Ajax, Jquery</p>
+                <span>Case Study</span>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            <img id="jobSearch" src="Assets/job.jpg" alt="JobSearch" />
+            <img id="jobSearchImg" src="Assets/job.jpg" alt="JobSearch" />
           </div>
           <div class="col-md-4">
             <img
