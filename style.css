@@ -1,23 +1,28 @@
 body {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG); */
-    background-size: cover;
-    background-position: center;
+    /*  background-size: cover;
+    background-position: center; */
     /* height: 100vh; */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* overflow-x: hidden; */
-    margin-top: -20px;
+
     /* min-zoom: 10; */
     /* min-zoom: 10px; */
-    max-width: 100%;
-    height: auto;
-
+    /* max-width: 100%;
+    height: auto; */
 }
 
 #backImg {
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG);
+    background: url(Assets/pro_img.JPG) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
-    width: 100%;
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG);
+    height: 100vh;
+    width: 100%; */
     /*height to 100% of view height*/
     /* background: #31b0d5; */
     /*background color to blue*/
@@ -27,16 +32,30 @@ body {
 
     display: flex;
     flex-direction: column;
+    position: relative;
+    align-items: center;
 }
 
 .navbar-nav {
     margin-left: auto;
     margin-right: 70px;
-
 }
 
 .intro {
-    text-align: left;
+    text-align: center;
+    -webkit-animation: mymove 5s;
+    -webkit-animation-fill-mode: forwards;
+    position: absolute;
+}
+
+@-webkit-keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 15%;
+    }
 }
 
 .intro h1 {
@@ -47,25 +66,20 @@ body {
     color: white;
     /* animation: mymove infinite; */
 
-
-
-
     /* -webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
     -webkit-animation-iteration-count: 1; */
-
 }
 
 .hero {}
 
 .intro h2 {
-    font-family: 'Lobster';
+    font-family: "Lobster";
     color: white;
     margin-bottom: 20px;
     /* -webkit-animation-duration: 3s;
     -webkit-animation-delay: 2s;
     -webkit-animation-iteration-count: 1; */
-
 }
 
 #touch {
@@ -75,8 +89,6 @@ body {
     border: 1px solid white;
     color: white;
     font-weight: bold;
-
-
 }
 
 #about,
@@ -84,7 +96,6 @@ body {
 #contact {
     text-align: center;
     padding: 20px 30px;
-
 }
 
 /*  */
@@ -118,9 +129,46 @@ img:hover div {
     border-radius: 10px;
 }
 
+/* Parent Container */
+.imageContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Child Text Container */
+.imageContainer p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.imageContainer:hover {
+    cursor: pointer;
+}
+
+.imageContainer:hover p {
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;
+}
+
 footer {
     bottom: 0px !important;
     background-color: burlywood;
     text-align: center;
     margin-top: 0px;
+    padding: 10px;
 }
