@@ -1,0 +1,43 @@
+.imageContainer {
+    background: url(Assets/coverImg2.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG);
+      height: 100vh;
+      width: 100%; */
+    /*height to 100% of view height*/
+    /* background: #31b0d5; */
+    /*background color to blue*/
+    margin-bottom: 0;
+    /*no bottom margin*/
+    /* background-repeat: no-repeat; */
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+#eventProj,
+#jobSearchProj,
+#weatherDisplay {
+    display: none;
+
+}
+
+footer {
+    bottom: 0px !important;
+    background-color: burlywood;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px;
+}

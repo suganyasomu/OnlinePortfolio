@@ -117,6 +117,8 @@ body {
   background-color: #c3c3c3;
 }
 
+
+
 #about,
 #portfolioSection,
 #contact {
@@ -126,11 +128,14 @@ body {
 
 /*  */
 
-#weather,
-#jobSearch {
-  height: 30vh;
+.image {
+  height: 40vh;
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 100px;
+
 }
+
 .img-thumbnail {
   height: 200px;
   width: 60%;
@@ -153,20 +158,7 @@ body {
   --animate-duration: 3s;
 }
 
-/* .caption-text {
-  visibility: hidden;
-} */
 
-img:hover {
-  cursor: pointer;
-}
-
-/* img:hover div {
-  width: 150px;
-  padding: 8px 15px;
-  visibility: visible;
-  opacity: 0.7;
-} */
 
 #contactSection {
   margin-top: 20px;
@@ -188,11 +180,12 @@ img:hover {
 /* Child Text Container */
 .imageContainer div {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  /* bottom: 0;
+  right: 0; */
+
   background: black;
   color: white;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   font-family: sans-serif;
   opacity: 0;
   visibility: hidden;
@@ -201,9 +194,17 @@ img:hover {
   float: centre;
 }
 
-.caption {
+.caption-text {
+
   text-align: center;
+  margin-top: 50px;
+  width: 90% !important;
+  top: 20px;
+  height: 30vh;
+  margin-right: 10px;
 }
+
+
 
 /* Hover on Parent Container */
 .imageContainer:hover {
@@ -214,13 +215,15 @@ img:hover {
   width: 150px;
   padding: 8px 15px;
   visibility: visible;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .btn {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
 
 footer {
   bottom: 0px !important;
