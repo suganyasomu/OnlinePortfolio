@@ -27,16 +27,21 @@
     margin-right: 70px;
 }
 
-#eventProj,
-#jobSearchProj,
-#weatherDisplay {
-    display: none;
+img {
+    height: 40vh;
+    margin-top: 80px;
+    width: 50%;
+    margin-left: 80px;
+    border: 1px solid lightgrey;
+}
 
+.col-md-6 {
+    margin-bottom: 100px;
 }
 
 footer {
     bottom: 0px !important;
-    background-color: burlywood;
+    background-color: lightblue;
     text-align: center;
     margin-top: 0px;
     padding: 10px;

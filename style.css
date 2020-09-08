@@ -12,8 +12,19 @@ body {
     height: auto; */
 }
 
+.social {
+  margin-top: 30px;
+  color: black;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+/* #linkedin {
+  margin-left: 10px;
+} */
+
 .parallax {
-  background: url(Assets/pro_img.JPG) no-repeat center fixed;
+  background: url("https://wallpaper-house.com/data/out/7/wallpaper2you_169610.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -213,9 +224,10 @@ body {
 
 .imageContainer:hover div {
   width: 150px;
-  padding: 8px 15px;
+  /* padding: 10px 20px; */
   visibility: visible;
   opacity: 0.5;
+
 }
 
 .btn {
@@ -223,11 +235,21 @@ body {
   margin-bottom: 10px;
 }
 
+#contactrow {
+  margin-top: 20px;
 
+  text-align: center;
+
+
+}
+
+form {
+  margin-left: 70px;
+}
 
 footer {
   bottom: 0px !important;
-  background-color: burlywood;
+  background-color: lightblue;
   text-align: center;
   margin-top: 0px;
   padding: 10px;

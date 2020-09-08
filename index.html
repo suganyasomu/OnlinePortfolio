@@ -15,6 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -50,7 +54,24 @@
       <div class="intro animate__animated animate__backInDown">
         <h1>Suganya Somu</h1>
         <h2>Full stack Web Developer in Oregon</h2>
-        <a class="button" href="#contact" id="touch">GET IN TOUCH</a>
+        <div class="social">
+          <a
+            class="social"
+            href="https://github.com/suganyasomu"
+            target="_blank"
+            ><i class="fa fa-github" aria-hidden="true"></i
+          ></a>
+          <a
+            class="social"
+            id="linkedin"
+            href="https://www.linkedin.com/in/suganyasomu/"
+            target="_blank"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+          <a class="social" href="https://www.facebook.com/" target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+        </div>
       </div>
     </div>
 
@@ -63,13 +84,14 @@
           <div class="col-md-4">
             <div class="about-box animate__animated animate__backInLeft">
               <!-- <a class="anchor" name="about"></a> -->
-              <h3>HI MY NAME IS SUGANYA SOMU</h3>
+              <h3>Hello, My name is suganya somu</h3>
               <hr />
               <p>
                 I'm a Full stack Web Developer living in oregon, I enjoy to
-                create simple and stylish digital web interfaces. simbring to
-                life cool and creative designs, and I love to keep up to date
-                with the latest web technologies.
+                create simple and stylish digital web interfaces using HTML5,CSS
+                and javascript. I would like to bring life cool and creative
+                designs, and I love to keep up to date with the latest web
+                technologies.
               </p>
             </div>
           </div>
@@ -230,41 +252,61 @@
     <section class="container" id="contactSection">
       <h1 id="contact">Contact</h1>
 
-      <form>
-        <div class="row">
-          <div class="col-md-4">
-            <label for="inputEmail4">Name</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail4"
-              placeholder="Suganya Somu"
-            />
-          </div>
+      <div class="row">
+        <div class="col-md-4" id="contactrow">
+          <h4 class="quotetext">Current Location</h4>
+          <!-- <i class="fas fa-home" id="location"></i> -->
+
+          <p class="quotetext">Oregon, United States</p>
+
+          <h4 class="quotetext">Telephone</h4>
+          <!-- <i class="fas fa-phone" id="phone"></i> -->
+
+          <p class="quotetext">9719855844 <br /></p>
+
+          <h4 class="quotetext">Send me an Email:</h4>
+          <!-- <i class="fas fa-envelope-square" id="email"></i> -->
+
+          <p class="quotetext">sweetsugan12@gmail.com</p>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label for="inputAddress">Email</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="sweetsugan12@gmail.com"
-            />
-          </div>
+        <div class="col-md-8">
+          <form>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputEmail4">Name</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail4"
+                  placeholder="Suganya Somu"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="inputAddress">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="sweetsugan12@gmail.com"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">submit</button>
+          </form>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">submit</button>
-      </form>
+      </div>
     </section>
     <!-- </main> -->
     <!-- ============================================END-CONTACT========================================== -->
