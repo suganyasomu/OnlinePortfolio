@@ -8,7 +8,7 @@ $(document).ready(function () {
     } else if (getId === "jobSearch") {
       window.location.href = "jobSearch.html";
     } else {
-      window.location.href = "dailyscheduler.html";
+      window.location.href = "dailyScheduler.html";
     }
   });
 });
