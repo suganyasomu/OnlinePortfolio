@@ -14,14 +14,29 @@ body {
 
 .social {
   margin-top: 30px;
-  color: black;
-  font-size: 30px;
+  color: white;
+  /* padding: 10px 20px; */
+  /* background-color: wheat; */
+  font-size: 20px;
   margin-left: 20px;
+
 }
 
-/* #linkedin {
-  margin-left: 10px;
-} */
+#linkedin {
+  background-color: #0077b5;
+  padding: 2px;
+
+}
+
+#git {
+  color: black;
+}
+
+#facebook {
+  background-color: #0f90f3;
+  border-radius: 50%;
+  padding: 5px;
+}
 
 .parallax {
   background: url("https://wallpaper-house.com/data/out/7/wallpaper2you_169610.jpg") no-repeat center fixed;
@@ -156,17 +171,21 @@ body {
   border-radius: 50%;
 }
 
+.animate__animated.animate__backInDown {
+  --animate-duration: 4s;
+}
+
 /* Animation */
 .animate__animated.animate__backInLeft {
-  --animate-duration: 5s;
+  --animate-duration: 10s;
 }
 
 .animate__animated.animate__backInRight {
-  --animate-duration: 5s;
+  --animate-duration: 10s;
 }
 
 .animate__animated.animate__backInUp {
-  --animate-duration: 3s;
+  --animate-duration: 8s;
 }
 
 
