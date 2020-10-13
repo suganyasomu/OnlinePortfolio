@@ -139,6 +139,10 @@ body {
   background-color: #f2f5fa;
 }
 
+#addNewBurger{
+ margin-left: 375px;
+}
+
 #contactSection {
   background-color: #c3c3c3;
 }

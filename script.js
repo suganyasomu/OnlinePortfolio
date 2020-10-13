@@ -7,8 +7,11 @@ $(document).ready(function () {
       window.location.href = "weather.html";
     } else if (getId === "jobSearch") {
       window.location.href = "jobSearch.html";
-    } else {
+    } else if(getId === "dailyEvent"){
       window.location.href = "dailyScheduler.html";
+    }
+    else{
+      window.location.href = "burgerApp.html";
     }
   });
 });
