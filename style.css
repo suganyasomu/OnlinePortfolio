@@ -39,7 +39,7 @@ body {
 }
 
 .parallax {
-  background: url("https://wallpaper-house.com/data/out/7/wallpaper2you_169610.jpg") no-repeat center fixed;
+  background: url("Assets/background_img.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
