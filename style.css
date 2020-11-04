@@ -191,7 +191,9 @@ body {
   --animate-duration: 8s;
 }
 
-
+.animate__animated.animate__headShake{
+  --animate-duration: 10s;
+}
 
 #contactSection {
   margin-top: 20px;
@@ -207,6 +209,7 @@ body {
   /* width: 100px; */
   /* height: 200px; */
   float: centre;
+  /* margin:0px; */
   /* margin-right: 100px; */
 }
 
@@ -245,17 +248,23 @@ body {
 }
 
 .imageContainer:hover div {
-  width: 150px;
+  /* width: 150px; */
   /* padding: 10px 20px; */
   visibility: visible;
   opacity: 0.5;
-
+  height: 40vh;
+  width: 100%;
+  margin:0;
+  padding:0px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 100px; */
 }
 
 .btn {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 
 #contactrow {
   margin-top: 50px;
@@ -270,10 +279,11 @@ form {
  margin-bottom: 30px;
  margin-right:30px;
 }
-.col-md-6{
-  /* border:1px solid purple; */
-}
 
+.col-md-4{
+ 
+  height:45vh;
+}
 footer {
   bottom: 0px !important;
   background-color: lightblue;

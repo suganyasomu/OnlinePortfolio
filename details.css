@@ -1,10 +1,10 @@
 .imageContainer {
-    background: url(Assets/coverImg2.jpg) no-repeat center center;
+    background: url(Assets/coverImg2.jpg) no-repeat ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
 
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../OnlinePortfolio/Assets/pro_img.JPG);
       height: 100vh;
@@ -32,7 +32,7 @@ img {
     margin-top: 80px;
     width: 50%;
     margin-left: 80px;
-    border: 1px solid lightgrey;
+    /* border: 1px solid lightgrey; */
 }
 
 .col-md-6 {

@@ -1,17 +1,22 @@
 $(document).ready(function () {
-  $(".image").click(function () {
+  $(".caption-text").click(function () {
     var getId = this.id;
     console.log(getId);
-
-    if (getId === "weather") {
-      window.location.href = "weather.html";
-    } else if (getId === "jobSearch") {
-      window.location.href = "jobSearch.html";
-    } else if(getId === "dailyEvent"){
-      window.location.href = "dailyScheduler.html";
-    }
-    else{
-      window.location.href = "burgerApp.html";
-    }
+switch(getId){
+  case weather:
+     window.location.href = "weather.html";
+  break;
+  case jobSearch: 
+  window.location.href = "jobSearch.html";
+  break;
+  case dailyEvent: 
+  window.location.href = "dailyScheduler.html";
+  break;
+  case burger: 
+  window.location.href = "burgerApp.html";
+  break;
+default:
+  window.location.href = "foodReview.html";
+};
   });
 });
